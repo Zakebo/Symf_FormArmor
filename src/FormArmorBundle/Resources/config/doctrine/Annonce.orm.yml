@@ -1,0 +1,24 @@
+FormArmorBundle\Entity\Annonce:
+    type: entity
+    table: null
+    repositoryClass: FormArmorBundle\Repository\AnnonceRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        intitule:
+            type: string
+            length: '50'
+        details:
+            type: string
+            length: '500'
+        dateAffichage:
+            type: date
+            column: date_affichage
+        dateDesaffichage:
+            type: date
+            column: date_desaffichage
+    lifecycleCallbacks: {  }
